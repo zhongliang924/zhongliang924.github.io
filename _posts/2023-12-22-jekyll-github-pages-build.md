@@ -4,12 +4,6 @@ title: Jekyll + Github Pages 搭建个人免费博客
 categories: Github
 description: Jekyll是一个方便的静态博客生成工具，用户可以选择主题，并通过Jekyll将内容与选择的主题样式布局相结合，生成自己的静态博客网站。
 keywords: Jekyll, Github
-mermaid: false
-sequence: false
-flow: false
-mathjax: false
-mindmap: false
-mindmap2: false
 topmost: true
 ---
 
