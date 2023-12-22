@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://github.com/zhongliang924/zhongliang924.github.io
+url: https://zhongliang924.github.io
 date_format: "ordinal"
 title: 博客
 subtitle: "无聊的笔记"
