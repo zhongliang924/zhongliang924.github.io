@@ -2,19 +2,18 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://zhongliang924.github.io/
+url: https://mazhuang.org
 date_format: "ordinal"
-title: 博客
-subtitle: "无聊的笔记"
+title: 码志
+subtitle: "公众号：闷骚的程序员"
 description: "马壮的个人博客，公众号：闷骚的程序员"
 keywords: 码志, Zhuang Ma, mzlogin, mazhuang, 闷骚的程序员
 timezone: Asia/Shanghai
-github: [metadata]
 encoding: "utf-8"
 # 页面左下角显示的年份
-since: 2023
+since: 2015
 # 源码仓库，请替换成自己的
-repository: zhongliang924/zhongliang924.github.io
+repository: mzlogin/mzlogin.github.io
 # 对 css 和 js 资源的 cdn 加速配置
 cdn:
     jsdelivr:
@@ -58,12 +57,12 @@ highlight_theme: github
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: Li Zhongliang
-organization: 
-organization_url: 
-github_username: zhongliang924
+author: Zhuang Ma
+organization:
+organization_url:
+github_username: mzlogin
 location: Wuhan, China
-email: 1551054080@qq.com
+email: chumpma@gmail.com
 
 # ---------------- #
 #    Navigation    #
@@ -147,7 +146,7 @@ comments_provider: giscus
 # !!!Important!!! Please modify infos below to yours
 # disqus 配置参考：https://disqus.com
 disqus:
-    username: 
+    username:
 # gitment 配置参考：https://imsun.net/posts/gitment-introduction/
 gitment:
     owner: mzlogin
