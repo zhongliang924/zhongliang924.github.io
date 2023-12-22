@@ -52,7 +52,7 @@ bundle exec jekyll serve
 
 在 branch 下选择 master：
 
-![image-20231222111533524](./images/posts/image-20231222111533524.png)
+![image-20231222111533524](/images/posts/image-20231222111533524.png)
 
 
 访问 [https://zhongliang924.github.io/](https://zhongliang924.github.io/) 可以访问自己的开源博客了。
