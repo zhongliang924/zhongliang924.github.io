@@ -2,7 +2,7 @@
 layout: post
 title: Jekyll + Github Pages 搭建个人免费博客
 categories: [cate1, cate2]
-description: 搭建专属博客网站
+description: Jekyll是一个方便的静态博客生成工具，用户可以选择主题，并通过Jekyll将内容与选择的主题样式布局相结合，生成自己的静态博客网站。
 keywords: Jekyll, Github
 mermaid: false
 sequence: false
@@ -47,9 +47,13 @@ bundle exec jekyll serve
 
 ## 如何使用主题
 
+在 Github 找到一个自己喜欢的主题，我找的主题是：[https://github.com/mzlogin/mzlogin.github.io](https://github.com/mzlogin/mzlogin.github.io)，把它 fork 下来，命名为 `zhongliang924.github.io`。
 
+在 branch 下选择 master：
 
+![image-20231222111533524](https://gitee.com/Li-zhongliang-q/pic-md1/raw/master/img/image-20231222111533524.png)
 
+访问 [https://zhongliang924.github.io/](https://zhongliang924.github.io/) 可以访问自己的开源博客了。
 
 ## Jekyll基本操作
 
@@ -57,8 +61,10 @@ bundle exec jekyll serve
 
 在本地运行博客（以下三种命令作用相同）
 
+```
 bundle exec jekyll serve
 
 jekyll serve
 
 jekyll s
+```
