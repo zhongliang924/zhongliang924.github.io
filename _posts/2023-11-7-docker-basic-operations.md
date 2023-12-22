@@ -4,10 +4,9 @@ title: Docker基本操作
 categories: Docker
 description: 
 keywords: Docker
-topmost: true
 ---
 
-本节介绍 Docker 的基本操作
+本文提供了一系列关于 Docker 的操作，包括修改 Docker 镜像默认存储位置、删除无用镜像和容器、修改共享内存、添加端口映射等。
 ## 修改Docker镜像默认存储位置
 
 Docker容器默认存储位于`/var/lib/docker`下面，可以通过以下命令查看我们的Docker容器具体位置
