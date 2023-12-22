@@ -10,6 +10,7 @@ flow: false
 mathjax: false
 mindmap: false
 mindmap2: false
+topmost:true
 ---
 
 **Jekyll**是一个方便的静态博客生成工具，用户可以选择主题，并通过Jekyll将内容与选择的主题样式布局相结合，生成自己的静态博客网站。
@@ -51,7 +52,7 @@ bundle exec jekyll serve
 
 在 branch 下选择 master：
 
-![image-20231222111533524](../images/posts/image-20231222111533524.png)
+![image-20231222111533524](/images/posts/image-20231222111533524.png)
 
 
 访问 [https://zhongliang924.github.io/](https://zhongliang924.github.io/) 可以访问自己的开源博客了。
