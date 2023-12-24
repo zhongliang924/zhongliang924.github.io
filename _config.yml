@@ -5,9 +5,9 @@ baseurl:
 url: https://zhongliang924.github.io
 date_format: "ordinal"
 title: 博客
-subtitle: "无聊的笔记"
-description: "马壮的个人博客，公众号：闷骚的程序员"
-keywords: 码志, Zhuang Ma, mzlogin, mazhuang, 闷骚的程序员
+subtitle: "随便写写"
+description: "李仲亮的个人博客，公众号：闷骚的程序员"
+keywords: 博客, 日志, 维基
 timezone: Asia/Shanghai
 encoding: "utf-8"
 # 页面左下角显示的年份
@@ -57,7 +57,7 @@ highlight_theme: github
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: Li Zhongliang
+author: 李仲亮
 organization:
 organization_url:
 github_username: mzlogin
