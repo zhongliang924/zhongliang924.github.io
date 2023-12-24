@@ -9,15 +9,13 @@ keywords: Docker
 本文提供了在 Ubuntu 和 Windows 系统上使用 Docker 进行用户安装和环境配置的步骤，以及创建和管理容器的详细说明。
 ## Ubuntu docker
 
-Docker 的安装方法可以参考：[02Docker安装](D:\GitHub\diary\source\笔记\01Docker\02Docker安装.md)
+Docker 的安装方法可以参考：[Docker安装和配置](https://zhongliang924.github.io/2023/09/20/docker-installation/)
 
-接下来需要拉取 NVIDIA CUDA 镜像，在 [nvidia/container-images](https://gitlab.com/nvidia/container-images/cuda/-/blob/master/doc/supported-tags.md) 中查看 CUDA 镜像版本，通过
+接下来需要拉取 NVIDIA CUDA 镜像，在 [nvidia/container-images](https://gitlab.com/nvidia/container-images/cuda/-/blob/master/doc/supported-tags.md) 中查看 CUDA 镜像版本，通过以下命令拉取镜像：
 
 ```shell
 docker pull nvidia/cuda:11.6.0-devel-ubuntu18.04
 ```
-
-拉取镜像。
 
 `base`， `devel`， `runtime` 版本介绍：
 
@@ -107,13 +105,13 @@ docker update --restart=always ${user}
 
 cmd 打开 Windows 终端，接下来要连接到我们的私有镜像仓库 10.24.83.22:8080，由于私服采用的是http协议，默认不被Docker信任，需要进行配置，改为https协议，打开 docker-desktop 的设置界面，点击 `Docker Engine` 按钮，在右边的面板中编辑：
 
-```json
+```
 "insecure-registries": ["https://10.24.83.22:8080"],
 ```
 
 顺便可以编辑一下 docker 镜像
 
-```json
+```
 "registry-mirrors": ["https://registry.docker-cn.com"]
 ```
 
