@@ -341,7 +341,7 @@ $$
 R = ceil(CR \cdot \frac{CV}{DV})
 $$
 
-其中 $ R $ 表示 K8s 拥有 replicas 的数量；$CR$ 是当前 replicas pod 的数量；$CV$ 是当前的指标，表示来自所有自定义度量的平均值；$DV$ 是所需的度量值。当 $R$ 与 $CR$ 不同时，HPA 可以增加或减少 replicas 的数量。
+其中 $$ R $$ 表示 K8s 拥有 replicas 的数量；$$ CR $$ 是当前 replicas pod 的数量；$$ CV $$ 是当前的指标，表示来自所有自定义度量的平均值；$$ DV $$ 是所需的度量值。当 $$ R $$ 与 $$ CR $$ 不同时，HPA 可以增加或减少 replicas 的数量。
 
 以下 HPA 文件 `speech-HPA.yml` 可以自动缩放 Triton 推理服务器的部署，使用 `.spec.targetAverageValue` 字段所需的度量值。该字段定期调整 pods 的数量，以使观察到的自定义度量与目标值匹配。
 
