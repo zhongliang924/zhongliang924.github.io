@@ -2,7 +2,7 @@
 layout: wiki
 title: docker创建用户
 cate1: docker
-description: 
+description: 创建Ubuntu用户
 keywords: docker
 ---
 
