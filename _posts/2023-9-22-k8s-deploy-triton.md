@@ -336,10 +336,12 @@ kubectl get --raw /apis/custom.metrics.k8s.io/v1beta1/namespaces/default/pods/*/
 **Autoscaling**  即弹性伸缩，是 K8s 中一种非常核心的功能，它可以根据给定的指标（例如 CPU 或 内存）自动缩放 Pod 副本，从而可以更好管理和应用计算机资源，提高系统可用性和性能，同时减少开销和成本，弹性收缩可以解决服务负载存在较大波动或资源实际使用与预估之间的差距。**HPA** (Horizotal Pod AutoScaler) 可以根据 Pod 个数实现自动扩/缩容。
 
 现在可以创建一个用于自定义度量的 HPA ，HPA 可以根据观察到的指标自动缩放复制器中 Pods 的数量。HPA 根据监测值和当前值的比率来控制 K8s 中 **replicas Pods** 的数量。
+
 $$
 R = ceil(CR \cdot \frac{CV}{DV})
 $$
-其中 $R$ 表示 K8s 拥有 replicas 的数量；$CR$ 是当前 replicas pod 的数量；$CV$ 是当前的指标，表示来自所有自定义度量的平均值；$DV$ 是所需的度量值。当 $R$ 与 $CR$ 不同时，HPA 可以增加或减少 replicas 的数量。
+
+其中 $ R $ 表示 K8s 拥有 replicas 的数量；$CR$ 是当前 replicas pod 的数量；$CV$ 是当前的指标，表示来自所有自定义度量的平均值；$DV$ 是所需的度量值。当 $R$ 与 $CR$ 不同时，HPA 可以增加或减少 replicas 的数量。
 
 以下 HPA 文件 `speech-HPA.yml` 可以自动缩放 Triton 推理服务器的部署，使用 `.spec.targetAverageValue` 字段所需的度量值。该字段定期调整 pods 的数量，以使观察到的自定义度量与目标值匹配。
 
