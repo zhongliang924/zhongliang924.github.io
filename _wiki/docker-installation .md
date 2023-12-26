@@ -1,9 +1,9 @@
 ---
-layout: post
-title: Docker安装和配置
-categories: Docker
+layout: wiki
+title: docker安装和配置
+cate1: docker
 description: 本文介绍docker的安装细节
-keywords: Docker
+keywords: docker
 ---
 
 本文包含了安装和配置 Docker 及 NVIDIA Docker 的步骤，提供了清晰的命令和步骤，以确保 Docker 和 NVIDIA Docker 在系统上正确安装和配置。
@@ -65,13 +65,13 @@ sudo chmod a+r /etc/apt/keyrings/docker.gpg
 
 查看 Docker 是否正常安装：
 
-![image-20230920203249832.png](/images/posts/image-20230920203249832.png)
+![image-20230920203249832.png](/images/wiki/image-20230920203249832.png)
 
 ## 安装 NVIDIA Docker
 
 首先验证英伟达驱动已正确安装：
 
-![image-20230920203532500.png](/images/posts/image-20230920203532500.png)
+![image-20230920203532500.png](/images/wiki/image-20230920203532500.png)
 
 设置 stable 存储库和密钥：
 
