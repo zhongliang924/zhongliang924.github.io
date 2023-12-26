@@ -1,7 +1,7 @@
 ---
 layout: wiki
 title: docker创建用户
-categories: docker
+cate1: docker
 description: 
 keywords: docker
 ---
