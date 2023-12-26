@@ -1,6 +1,6 @@
 ---
 layout: post
-title: docker基础概念
+title: docker基础
 categories: docker
 description: docker 是一个开源项目，基于 Google 公司推出的 Go 语言实现，项目后来加入了 Linux 基金会，遵从 Apache 2.0 协议，项目代码在 Github 上进行维护。
 keywords: docker
