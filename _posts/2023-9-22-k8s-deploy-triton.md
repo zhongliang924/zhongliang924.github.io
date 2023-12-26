@@ -4,6 +4,7 @@ title: k8s部署Triton
 categories: [k8s, triton]
 description: 
 keywords: k8s, triton
+mathjax: true
 ---
 
 本节介绍使用k8s部署Triton服务的流程，所使用的docker版本：24.0.2 ，k8s版本：1.21.3
