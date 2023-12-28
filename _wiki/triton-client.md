@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: wiki
 title: triton客户端
-categories: triton
+cate1: triton
 description: triton客户端
 keywords: triton
 ---

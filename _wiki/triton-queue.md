@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: wiki
 title: triton队列
-categories: triton
+cate1: triton
 description: triton队列
 keywords: triton
 ---
@@ -19,11 +19,11 @@ Triton 队列
 
 只有一个 Scheduler 队列
 
-![image-20230705140911031](/images/posts/image-20230705140911031.png)
+![image-20230705140911031](/images/wiki/image-20230705140911031.png)
 
 Dynamic batching：可以定义多个优先级队列，先执行高优先级 Request，再执行低优先级 Request。
 
-![image-20230705140929637](/images/posts/image-20230705140929637.png)
+![image-20230705140929637](/images/wiki/image-20230705140929637.png)
 
 配置 Config 文件，启动 server，通过 API 向 Server 发起请求。
 
@@ -34,7 +34,7 @@ Dynamic batching：可以定义多个优先级队列，先执行高优先级 Req
 
 priority_queue_policy 是一个容器，可以放多个 priority，其中 key: 1 表示设置优先级为 Level 1 的队列策略，数字越小优先级越高，max_queue_size 表示队列能容纳的最大请求数。对于未出现的优先级级别，则使用默认的 default_queue_policy
 
-![image-20230705141621217](/images/posts/image-20230705141621217.png)
+![image-20230705141621217](/images/wiki/image-20230705141621217.png)
 
 通过 Client API 向 Server 端发起请求，给 Request 设置 Priority
 

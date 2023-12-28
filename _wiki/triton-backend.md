@@ -1,8 +1,8 @@
 ---
-layout: post
-title: triton-backend详解
-categories: triton
-description: triton-backend详解
+layout: wiki
+title: triton后端
+cate1: triton
+description: triton后端
 keywords: triton
 ---
 
@@ -26,17 +26,15 @@ TRITONBACKEND_ModelInstance：可以在 GPU0、GPU1上跑（设备）
 
 这三个类代码已经实现了，Triton 需要与这三个类交互，需要实现七个接口函数（C语言编写），TritonBACKEND 将对象传到接口函数里面，包括 Initialize 和 Finalize，关键部分：ModelInstanceExecute，调这个接口执行推理
 
-![image-20230614111953084](/images/posts/image-20230614111953084.png)
+![image-20230614111953084](/images/wiki/image-20230614111953084.png)
 
 Triton 设计了两个状态类，**ModelState** 和 **ModelInstanceState**，推理执行的代码是写在这两个类里面，
 
-![image-20230614112122034](/images/posts/image-20230614112122034.png)
+![image-20230614112122034](/images/wiki/image-20230614112122034.png)
 
 **维护状态 -> ModelState**：模型名称、模型输入输出信息，batch_size；ModelInstance：在哪个设备上运行
 
-**模型推理 -> ModelState、ModelInstanceState**：其中 ModelState  实现了成员函数 loadModel；ModelInstanceState 实现成员函数：SetInputTensors、Execute、ReadOutputTensors
-
-![image-20230614112407527](/images/posts/image-20230614112407527.png)
+![image-20230614112407527](/images/wiki/image-20230614112407527.png)
 
 > 定义三个预定义类的目的：
 >

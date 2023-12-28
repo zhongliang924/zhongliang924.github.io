@@ -1,7 +1,7 @@
 ---
-layout: post
-title: k8s数据可视化
-categories: k8s
+layout: wiki
+title: k8s监控
+cate1: k8s
 description: k8s监控
 keywords: k8s
 ---
@@ -35,23 +35,23 @@ Prometheus 有两个镜像使用国内网络无法下载，需要替换国内镜
 
    文件位于 `manifests/kube-state-metrics-deployment.yaml`，镜像替换为 `registry.cn-hangzhou.aliyuncs.com/chenby/kube-state-metrics:v2.1.1`
 
-   ![image-20230726165631775](/images/posts/image-20230726165631775.png)
+   ![image-20230726165631775](/images/wiki/image-20230726165631775.png)
    
 2. **prometheus-adapter**
 
    文件位于 `manifests/prometheus-adapter-deployment.yaml`，镜像替换为 `registry.cn-hangzhou.aliyuncs.com/chenby/prometheus-adapter:v0.9.0`。
 
-   ![image-20230726165857086](/images/posts/image-20230726165857086.png)
+   ![image-20230726165857086](/images/wiki/image-20230726165857086.png)
 
 ### 暴露端口
 
 为了使局域网中任意设备能够通过 Web 端访问 Prometheus 和 grafana，需要修改 Prometheus 和 grafana 中 Service 文件内容。首先暴露 prometheus 端口，需要修改的文件位于 `manifests/prometheus-service.yaml`，端口映射到 32101，需要指定 type 为 `NodePort`，同时在端口中指定 `nodePort: 32101`：
 
-![image-20230726171457539](/images/posts/image-20230726171457539.png)
+![image-20230726171457539](/images/wiki/image-20230726171457539.png)
 
 其次暴露 grafana 端口，需要修改的文件位于 `manifests/grafana-service.yaml`，端口映射到 32102：
 
-![image-20230726172334631](/images/posts/image-20230726172334631.png)
+![image-20230726172334631](/images/wiki/image-20230726172334631.png)
 
 ### 修改 Prometheus 配置文件
 
@@ -75,7 +75,7 @@ Prometheus 有两个镜像使用国内网络无法下载，需要替换国内镜
 kubectl get nodes --show-labels
 ```
 
-![image-20230726174410357](/images/posts/image-20230726174410357.png)
+![image-20230726174410357](/images/wiki/image-20230726174410357.png)
 
 给节点添加标签的命令：
 
@@ -116,7 +116,7 @@ kubectl delete --ignore-not-found=true -f manifests/ -f manifests/setup
 
 完成 Prometheus 的删除，如果所有节点均处于 Running 状态则表示安装成功：
 
-![image-20230726174848290](/images/posts/image-20230726174848290.png)
+![image-20230726174848290](/images/wiki/image-20230726174848290.png)
 
 ## Grafana 是什么
 
@@ -128,7 +128,7 @@ Grafana 本身并不负责数据层，它只提供了通用的接口，让底层
 
 Grafana 每次要展现一个仪表盘的时候，会向 Prometheus 发送一个查询请求。
 
-![image-20230403195237547](/images/posts/image-20230403195237547.png)
+![image-20230403195237547](/images/wiki/image-20230403195237547.png)
 
 最左边的 docker 服务会将服务的数据发送给 Prometheus(Prometheus-exporter)，最右侧的 Grafana 查询 Prometheus 来展示仪表盘。
 
