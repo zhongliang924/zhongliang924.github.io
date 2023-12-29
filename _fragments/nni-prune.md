@@ -14,7 +14,7 @@ tags: nni
 
 以 Transformer 系列的预训练模型为例，其剪枝流程共包含四步：首先准备数据/模型，接着针对多头注意力机制（Multi-head Attention）、嵌入层（embedding）和前馈神经网络（FFN）分别剪枝和再训练模型：
 
-![](../../figs.assets/image-20230625151203158.png)
+![image-20230625151203158](/images/fragments/image-20230625151203158.png)
 
 <center>图1 Transformer 系列模型剪枝流程示意图</center>
 
@@ -24,7 +24,7 @@ tags: nni
 
 在正式剪枝前，需要加载预训练模型，对数据预处理并创建相应的 dataloader，同时设计相应的训练/评估函数，以便后期对模型进行训练和评估，其流程如图 2 所示，共包含五个步骤：
 
-![](../../figs.assets/image-20230625152049553.png)
+![image-20230625152049553](/images/fragments/image-20230625152049553.png)
 
 <center>图2 数据/模型准备过程流程示意图</center>
 
@@ -36,7 +36,7 @@ tags: nni
 
 多头注意力剪枝和模型再训练分为三步。首先构建 pruner，接着对多头注意力模块进行剪枝，最后使用动态蒸馏机制再训练模型。
 
-![](../../figs.assets/image-20230625153051461.png)
+![image-20230625153051461](/images/fragments/image-20230625153051461.png)
 
 <center>图3 多头注意力剪枝和再训练示意图</center>
 
@@ -50,7 +50,7 @@ tags: nni
 
 NNI 的 SpeedUp 模块可以将 mask 中的参数和计算删除，具体删除流程如图 4 所示，以查询线性层权重（记为 Q）为例，其维度为 [768, 768]，掩码矩阵的维度也为 [768, 768]。首先对 mask 矩阵进行变换，第一维是注意力头数目 8，第二维是`768*768/8=73728`，变换后的 mask 矩阵变为 reshape mask 矩阵，然后对 reshape mask 矩阵在第二维度上进行求和，判断求和后的值是否为 0，此时 mask 矩阵的维度为 8，每个位置对应一个多头注意力，若位置 i 的值为 0，则在 Q 中将第 i 个多头裁剪掉。最后，将 [0,3,7] 作为参数传入 prune_heads 函数中，对 Q 进行裁剪，修建后，Q的维度为 [576,768]。在即将发布的 NNI 3.0 中的 SpeedUp 会对更多模型提供更加完善的支持。
 
-![](../../figs.assets/image-20230625154901512.png)
+![image-20230625154901512](/images/fragments/image-20230625154901512.png)
 
 <center>图4 利用 prune_heads 函数修剪自注意力模块过程示意图</center>
 
