@@ -19,7 +19,7 @@ tags: [android, 语音识别]
 
 该模块实现了一个语音识别系统，整体的 UI 如下：
 
-![image-20230720151237341](../../figs.assets/image-20230720151237341.png)
+![image-20230720151237341](/images/fragments/image-20230720151237341.png)
 
 ## 功能实现
 
