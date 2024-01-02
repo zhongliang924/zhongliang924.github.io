@@ -2,8 +2,6 @@
 layout: post
 title: triton推理服务入门
 categories: triton
-description: triton推理服务入门
-keywords: triton
 ---
 
 Triton 推理服务入门

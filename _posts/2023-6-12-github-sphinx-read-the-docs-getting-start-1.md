@@ -102,7 +102,7 @@ categories: sphinx
    在`source/_templates`目录编写`layout.html`文件
 
    ```
-   {% extends "!layout.html" %}
+   {% \extends "!layout.html" %}
    {% block extrahead %}
        <link href="{{ pathto("_static/style.css", True) }}" rel="stylesheet" type="text/css">
    {% endblock %}

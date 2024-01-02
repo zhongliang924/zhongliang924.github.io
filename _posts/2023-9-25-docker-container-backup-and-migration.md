@@ -2,8 +2,6 @@
 layout: post
 title: docker容器备份与迁移
 categories: docker
-description: 容器备份, 容器镜像
-keywords: docker
 ---
 
 本文介绍了三种容器备份的方法：离线迁移、DockerHub、私有镜像仓库

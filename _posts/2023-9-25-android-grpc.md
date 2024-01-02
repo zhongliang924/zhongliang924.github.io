@@ -2,8 +2,6 @@
 layout: post
 title: android中的GRPC通信
 categories: android
-description: android中的gRPC通信
-keywords: android
 ---
 
 # Android GRPC

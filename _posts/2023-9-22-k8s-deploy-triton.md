@@ -2,8 +2,6 @@
 layout: post
 title: k8s部署Triton
 categories: [k8s, triton]
-description: 
-keywords: k8s, triton
 mathjax: true
 ---
 

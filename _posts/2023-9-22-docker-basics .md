@@ -2,8 +2,6 @@
 layout: post
 title: docker基础
 categories: docker
-description: docker 是一个开源项目，基于 Google 公司推出的 Go 语言实现，项目后来加入了 Linux 基金会，遵从 Apache 2.0 协议，项目代码在 Github 上进行维护。
-keywords: docker
 ---
 
 Docker是基于Go语言的开源容器化平台，通过轻量级、可移植的容器实现快速交付和资源高效利用。其核心理念是构建、运输、运行，利用Namespace和Cgroups实现容器的资源隔离，同时提供Dockerfile和Docker Compose等工具简化应用管理。
