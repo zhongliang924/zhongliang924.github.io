@@ -102,12 +102,14 @@ categories: sphinx
    在`source/_templates`目录编写`layout.html`文件
    
    {% highlight python %}
+   {% raw %}
 
        {% extends "!layout.html" %}
        {% block extrahead %}
            <link href="{{ pathto("_static/style.css", True) }}" rel="stylesheet" type="text/css">
        {% endblock %}
-
+   
+   {% endraw %}
    {% endhighlight %}
 
 4. 安装autobuild工具，autobuild是一种HTTP服务的方式，可以在浏览器中通过ip地址来查看
