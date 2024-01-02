@@ -2,8 +2,6 @@
 layout: wiki
 title: k8s创建集群
 cate1: k8s
-description: 本文介绍使用k8s创建集群
-keywords: k8s
 ---
 
 `kubectl` 是 K8s 的命令行操作命令，可以创建和更新、删除、列表和查详情等一系列操作。

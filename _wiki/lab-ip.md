@@ -2,8 +2,6 @@
 layout: wiki
 title: 实验室ip
 cate1: IP
-description: 实验室ip 表格
-keywords: IP
 ---
 
 ## 实验室有线IP

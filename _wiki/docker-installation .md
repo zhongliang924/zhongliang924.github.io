@@ -2,8 +2,6 @@
 layout: wiki
 title: docker安装和配置
 cate1: docker
-description: 本文介绍docker的安装细节
-keywords: docker
 ---
 
 本文包含了安装和配置 Docker 及 NVIDIA Docker 的步骤，提供了清晰的命令和步骤，以确保 Docker 和 NVIDIA Docker 在系统上正确安装和配置。

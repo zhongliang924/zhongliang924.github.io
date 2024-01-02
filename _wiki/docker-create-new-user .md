@@ -2,8 +2,6 @@
 layout: wiki
 title: docker创建用户
 cate1: docker
-description: 创建Ubuntu用户
-keywords: docker
 ---
 
 本文提供了在 Ubuntu 和 Windows 系统上使用 Docker 进行用户安装和环境配置的步骤，以及创建和管理容器的详细说明。

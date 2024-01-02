@@ -2,8 +2,6 @@
 layout: wiki
 title: triton后端
 cate1: triton
-description: triton后端
-keywords: triton
 ---
 
 Triton_Backend详解

@@ -2,8 +2,6 @@
 layout: wiki
 title: triton入门
 cate1: triton
-description: triton入门
-keywords: triton
 ---
 
 # Triton入门级教程

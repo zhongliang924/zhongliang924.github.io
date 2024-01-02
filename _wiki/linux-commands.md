@@ -2,8 +2,6 @@
 layout: wiki
 title: linux命令
 cate1: 计算机网络
-description: linux命令
-keywords: linux
 ---
 
 ## 常用命令

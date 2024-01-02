@@ -2,8 +2,6 @@
 layout: wiki
 title: adb命令
 cate1: android
-description: adb命令
-keywords: android
 ---
 
 ## adb 命令

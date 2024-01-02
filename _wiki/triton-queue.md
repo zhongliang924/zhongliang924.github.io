@@ -2,8 +2,6 @@
 layout: wiki
 title: triton队列
 cate1: triton
-description: triton队列
-keywords: triton
 ---
 
 Triton 队列

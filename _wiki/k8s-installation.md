@@ -2,8 +2,6 @@
 layout: wiki
 title: k8s安装和配置
 cate1: k8s
-description: 本文介绍k8s的安装细节
-keywords: k8s
 ---
 
 Kubernetes 是由谷歌开发的一个开源系统，用于在集群内运行和管理以容器微服务为基础的应用。使用 Kubernetes 需要确保可以从 Kubernetes 集群外部访问在 Kubernetes 内创建的服务。以下是在 `Ubuntu` 主机上安装 K8s 的步骤：

@@ -2,8 +2,6 @@
 layout: wiki
 title: k8s监控
 cate1: k8s
-description: k8s监控
-keywords: k8s
 ---
 
 **Prometheus**：是从云原生计算基金会（CNCF）毕业的项目。Prometheus 是 Google 监控系统 BorgMon 类似实现的开源版，整套系统由监控服务、告警服务、时序[数据库](https://cloud.tencent.com/solution/database?from_column=20420&from=20420)等几个部分，及周边生态的各种指标收集器（Exporter）组成，是在当下主流的监控告警系统。

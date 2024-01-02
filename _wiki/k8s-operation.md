@@ -2,8 +2,6 @@
 layout: wiki
 title: k8s运维
 cate1: k8s
-description: 本文介绍k8s的操作
-keywords: k8s
 ---
 
 ## 结点删除网络配置

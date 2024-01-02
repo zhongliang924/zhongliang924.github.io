@@ -2,8 +2,6 @@
 layout: wiki
 title: docker基本操作
 cate1: docker
-description: 基本操作
-keywords: docker
 ---
 
 ## 修改docker默认存储位置
