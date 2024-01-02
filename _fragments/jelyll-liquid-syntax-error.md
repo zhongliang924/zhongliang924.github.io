@@ -1,6 +1,6 @@
 ---
 layout: fragment
-title: 编译jekyll报错 Error: Liquid syntax error (line 99): Unknown tag 'extends' 
+title: 编译jekyll报错
 tags: jekyll
 ---
 
