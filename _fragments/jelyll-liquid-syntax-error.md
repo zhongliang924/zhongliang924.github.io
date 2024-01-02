@@ -8,12 +8,14 @@ categories: sphinx
 
 {% highlight jinja2 %}
 {% raw %}
+
     ```
         {% extends "!layout.html" %}
         {% block extrahead %}
         <link href="{{ pathto("_static/style.css", True) }}" rel="stylesheet" type="text/css">
         {% endblock %}
     ```
+
 {% endraw %}
 {% endhighlight %}
 
@@ -21,6 +23,7 @@ categories: sphinx
 
 {% highlight jinja2 %}
 {% raw %}
+
     {% highlight jinja2 %}
     {% raw %}
         {% extends "!layout.html" %}
@@ -29,6 +32,7 @@ categories: sphinx
         {% endblock %}
     {% endraw %}
     {% endhighlight %}
+
 {% endraw %}
 {% endhighlight %}
 
