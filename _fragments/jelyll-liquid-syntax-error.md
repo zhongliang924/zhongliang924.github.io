@@ -24,13 +24,9 @@ tags: jekyll
 {% highlight html %}
 {% raw %}
 
-`{% highlight html %}`
-`{% extends "!layout.html" %}`
 {% block extrahead %}
 <link href="{{ pathto("_static/style.css", True) }}" rel="stylesheet" type="text/css">
 {% endblock %}
-`{% endraw %}`
-`{% endhighlight %}`
 
 {% endraw %}
 {% endhighlight %}
