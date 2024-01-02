@@ -1,9 +1,7 @@
 ---
 layout: wiki
 title: 网络协议
-cate1: 计算机网络
-description: 网络协议
-keywords: network
+cate1: linux
 ---
 
 # 网络协议面试题

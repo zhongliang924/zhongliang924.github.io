@@ -103,7 +103,6 @@ categories: sphinx
    
    {% highlight python %}
    {% raw %}
-
        {% extends "!layout.html" %}
        {% block extrahead %}
            <link href="{{ pathto("_static/style.css", True) }}" rel="stylesheet" type="text/css">
