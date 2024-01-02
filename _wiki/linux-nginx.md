@@ -1,9 +1,7 @@
 ---
 layout: wiki
 title: nginx介绍
-cate1: 计算机网络
-description: nginx介绍
-keywords: nginx
+cate1: linux
 ---
 
 ## 什么是 Nginx

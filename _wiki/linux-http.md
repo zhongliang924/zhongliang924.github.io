@@ -1,9 +1,7 @@
 ---
 layout: wiki
 title: http相关
-cate1: 计算机网络
-description: http相关
-keywords: http
+cate1: linux
 ---
 
 # HTTP 面试题

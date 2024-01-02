@@ -31,7 +31,7 @@ myst_enable_extensions = [
 
 添加 "smartquotes" 到 "myst_enable_extentions" 自动将标准引用转换为其它变体： `'single quotes'` 表示单个引用， `"double quotes"` 表示双倍引用。
 
-​	添加 "replacement" 到 "myst_enable_extentions" 将自动转换一些常见的排版文本：
+添加 "replacement" 到 "myst_enable_extentions" 将自动转换一些常见的排版文本：
 
 | text           | converted |
 | -------------- | --------- |
