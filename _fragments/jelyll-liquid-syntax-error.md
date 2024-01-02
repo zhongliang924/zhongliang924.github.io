@@ -17,15 +17,4 @@ tags: jekyll
 {% endraw %}
 ```
 
-查阅资料[ruby - Getting an "Liquid Exception: Liquid syntax error" while using Jekyll - Stack Overflow](https://stackoverflow.com/questions/52324134/getting-an-liquid-exception-liquid-syntax-error-while-using-jekyll)得知，Liquid 会尝试处理您的源代码，尤其是 jinja2 控制标记，为此您需要告诉 Liquid 避免使用原始标记进行处理：
-
-``` html
-{% raw %}
-    {% raw %}
-    {% extends "!layout.html" %}
-    {% block extrahead %}
-        <link href="{{ pathto("_static/style.css", True) }}" rel="stylesheet" type="text/css">
-    {% endblock %}
-    {% endraw %}
-{% endraw %}
-```
+查阅资料[ruby - Getting an "Liquid Exception: Liquid syntax error" while using Jekyll - Stack Overflow](https://stackoverflow.com/questions/52324134/getting-an-liquid-exception-liquid-syntax-error-while-using-jekyll)得知，Liquid 会尝试处理您的源代码，尤其是 jinja2 控制标记，为此您需要告诉 Liquid 避免使用原始标记进行处理。
