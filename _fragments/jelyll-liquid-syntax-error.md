@@ -7,8 +7,7 @@ tags: jekyll
 今天编译 `2023-6-12-github-sphinx-read-the-docs-getting-start-1` 文档的时候，github 提示了报错 Error: Liquid syntax error (line 99): Unknown tag 'extends'，查阅发现该文档有如下代码段：
 
 {% highlight jinja2 %}
-{% raw %}
-    
+{% raw %} 
 ```
 {% extends "!layout.html" %}
 {% block extrahead %}
