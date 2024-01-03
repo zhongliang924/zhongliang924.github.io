@@ -1,7 +1,7 @@
 ---
 layout: fragment
 title: 安卓语音识别模块笔记
-tags: [android, 语音识别]
+tags: android
 ---
 
 # 安卓语音模块

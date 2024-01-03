@@ -1,7 +1,7 @@
 ---
 layout: fragment
 title: 安卓语音唤醒模块笔记
-tags: [android, 语音识别]
+tags: android
 ---
 
 # Android 语音唤醒

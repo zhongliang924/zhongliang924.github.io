@@ -1,7 +1,7 @@
 ---
 layout: wiki
 title: linux命令
-cate1: 计算机网络
+cate1: linux
 ---
 
 ## 常用命令
