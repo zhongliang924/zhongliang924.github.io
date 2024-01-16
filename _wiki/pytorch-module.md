@@ -61,3 +61,65 @@ tentor([[-0.4794, -1.0073,  0.6200],
 
 我们发现 `embedding.weight` 是一个 [10, 3] 的向量。如果 `index=1`，那我们取 [-1.0556, -0.2404, -0.4578]，如果 `index=2`，那我们取 [ 1.3328,  2.5743, -0.7375]，在经过 embedding 后，原本 [2,4] 的维度，就变换为了 [2,4,3]，其实就是 [2,4] 中的每个值作为索引去 `nn.embedding` 中取对应的权重。
 
+## RMSNorm
+
+在每个向量矩阵计算之前，需要对输入向量进行 normalization，之前使用的是 layer norm，现在使用 RMSNorm，两者的区别在于：
+
+- layer norm：减去样本的均值，除以样本的方差，使整体样本不要太分散
+
+$$
+y = \frac{x-E(x)}{\sqrt{Var(x) + \epsilon}} * \gamma + \beta
+$$
+
+- RMS(root mean square) norm：省去了减去均值的操作，去中心化操作
+
+$$
+\overline{a}_i = \frac{a_i}{RMS(a)}g_i
+$$
+
+其中
+$$
+RMS(a) = \sqrt{\frac{1}{n}\sum_{i=1}^{n}{a_i^2}}
+$$
+pytorch 代码实现：
+
+```python
+class RMSNorm(nn.Module):
+    """
+        RMSNorm（Root Mean Square Layer Normalization）: 均方根层归一化，是一种层归一化方法
+
+        Args:
+            size: 输入张量维度大小
+            dim: 沿指定维度计算 RMSNorm
+            eps: 用于避免除以 0
+
+        Note:
+            此实现基于 https://github.com/bzhangGo/rmsnorm/blob/master/rmsnorm_torch.py
+            遵循 https://github.com/bzhangGo/rmsnorm/blob/master/LICENSE
+    """
+
+    def __init__(self, size: int, dim: int = -1, eps: float = 1e-5) -> None:
+        super().__init__()
+        self.scale = nn.Parameter(torch.ones(size))  # 可学习缩放参数
+        self.eps = eps  # 防止除 0 的小数值
+        self.dim = dim  # 用于计算 RMSNorm 的维度
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        """
+            执行 RMSNorm 前向传播
+
+            Args:
+                x: 输入张量
+
+            Returns:
+                torch.Tensor: 经过 RMSNorm 处理后的张量
+
+            Note:
+                原始的 RMSNorm 论文实现与此处的计算方法略有不同
+
+        """
+        norm_x = torch.mean(x * x, dim=self.dim, keepdim=True)
+        x_normed = x * torch.rsqrt(norm_x + self.eps)
+        return self.scale * x_normed
+```
+
