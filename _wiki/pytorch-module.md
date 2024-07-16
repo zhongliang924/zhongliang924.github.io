@@ -78,9 +78,11 @@ $$
 $$
 
 其中
+
 $$
 RMS(a) = \sqrt{\frac{1}{n}\sum_{i=1}^{n}{a_i^2}}
 $$
+
 pytorch 代码实现：
 
 ```python
@@ -122,4 +124,3 @@ class RMSNorm(nn.Module):
         x_normed = x * torch.rsqrt(norm_x + self.eps)
         return self.scale * x_normed
 ```
-
