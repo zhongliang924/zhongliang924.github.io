@@ -11,7 +11,7 @@ keywords: 博客, 日志, 维基
 timezone: Asia/Shanghai
 encoding: "utf-8"
 # 页面左下角显示的年份
-since: 2023
+since: 2024
 # 源码仓库，请替换成自己的
 repository: zhongliang924/zhongliang924.github.io
 # 对 css 和 js 资源的 cdn 加速配置
@@ -39,7 +39,7 @@ components:
     # 页面右上角，以及「关于」页面的二维码
     # 修改图片请替换 assets/images/qrcode.jpg
     qrcode:
-        enabled: false
+        enabled: true
         image_alt: 闷骚的程序员
     # 维基索引页使用哪种视图，支持 列表（list）/分类（cate）
     wiki:
@@ -61,7 +61,7 @@ author: 李仲亮
 organization:
 organization_url:
 github_username: zhongliang924
-location: Xiamen, China
+location: NanChang, China
 email: 1551054080@qq.com
 
 # ---------------- #
