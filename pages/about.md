@@ -1,18 +1,17 @@
 ---
 layout: page
 title: About
-description: 打码改变世界
-keywords: Zhuang Ma, 马壮
+keywords: Zhong liang, 仲亮
 comments: true
 menu: 关于
 permalink: /about/
 ---
 
-我是马壮，码而生，码而立。
+我是仲亮，以码为笔，绘就梦想蓝图。
 
-仰慕「优雅编码的艺术」。
+沉醉于「代码世界的诗意华章」。
 
-坚信熟能生巧，努力改变人生。
+笃信持之以恒，用代码雕琢璀璨人生
 
 ## 联系
 
