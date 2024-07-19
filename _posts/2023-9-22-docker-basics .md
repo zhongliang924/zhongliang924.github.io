@@ -4,7 +4,7 @@ title: docker基础
 categories: docker
 ---
 
-Docker是基于Go语言的开源容器化平台，通过轻量级、可移植的容器实现快速交付和资源高效利用。其核心理念是构建、运输、运行，利用Namespace和Cgroups实现容器的资源隔离，同时提供Dockerfile和Docker Compose等工具简化应用管理。
+Docker 是基于 Go 语言的开源容器化平台，通过轻量级、可移植的容器实现快速交付和资源高效利用。其核心理念是构建、运输、运行，利用 Namespace 和 Cgroups 实现容器的资源隔离，同时提供 Dockerfile 和 Docker Compose 等工具简化应用管理。
 
 Docker 相比虚拟机，交付速度更快，资源消耗更低，Docker 采用客户端/服务端（C/S）结构，使用远程 API 管理和创建容器，其可以轻松构建一个**轻量级、可移植的、自给自足**的容器，Docker 的三大理念是 **build（构建）、ship（运输）、run（运行）**，通过 **namespace** 及 **cgroup** 等来提供容器的资源隔离与安全保障。
 
@@ -75,10 +75,17 @@ Docker 容器经历以下阶段：
 
 **NameSpace 和 Cgroups**
 
-Linux 中的 PID、IPC、网络等资源是全局的，而 Linux 的 NameSpace 机制是一种资源隔离方案，在该机制下这些资源将不再是全局的，而是属于某个特定的 NameSpace，各个 NameSpace 下的资源互不干扰。
+Linux 中的 PID（进程 id）、IPC（进程间通信）、网络等资源是全局的，而 Linux 的 NameSpace 机制是一种资源隔离方案，在该机制下这些资源将不再是全局的，而是属于某个特定的 NameSpace，各个 NameSpace 下的资源互不干扰。
 
 **NameSpace 实际上修改了应用进程看待整个计算机“视图”，即它的“视线”被操作系统做了限制，只能“看到”某些指定的内容**。对于宿主机来说，这些被“隔离”了的进程跟其它进程并没有区别。
 
 虽然 NameSpace 技术可以实现资源隔离，但是进程还是可以不受控的访问系统资源，比如 CPU、内存、磁盘、网络等，为了控制容器进程对资源的访问，Docker 采用 control groups 技术（也就是 cgrous），有了 `cgroups` 就可以控制容器中进程对资源的访问，比如限制某个容器使用内存的上限、可以在哪些 CPU 上运行等等。
 
-有了这两项技术，容器看起来就真的像是独立的操作系统了
+有了这两项技术，容器看起来就真的像是独立的操作系统了。
+
+
+
+
+
+
+
