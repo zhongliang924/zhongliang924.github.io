@@ -1386,7 +1386,7 @@ body {
   background: var(--global-bg);
   color: var(--font-color);
   font-size: var(--global-font-size);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: AlimamaShuHeiTi;
   line-height: 2;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   scroll-behavior: smooth;
@@ -1668,7 +1668,7 @@ figure.highlight pre .javascript .function {
 #article-container pre,
 #article-container code {
   font-size: var(--global-font-size);
-  font-family: consolas, Menlo, 'PingFang SC', 'Microsoft YaHei', sans-serif !important;
+  font-family: Consolas, "Courier New", monospace !important;
   border-radius: 6px;
 }
 #article-container code {
@@ -3562,6 +3562,9 @@ figure.highlight pre .javascript .function {
 }
 #page-header #post-info {
   position: absolute;
+  bottom: 30px;
+  text-align: center;
+  padding: 0 8%;
   width: 100%;
   bottom: 30px;
 }

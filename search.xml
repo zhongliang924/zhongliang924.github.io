@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Hexo 修改字体</title>
+      <link href="/2024/12/28/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-font/"/>
+      <url>/2024/12/28/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-font/</url>
+      
+        <content type="html"><![CDATA[<p>教程链接：<a href="https://blog.june-pj.cn/posts/dd5a9bee/">Butterfly修改字体</a></p><hr><p>这里以<strong>阿里妈妈数黑体</strong><a href="https://www.iconfont.cn/fonts/detail?spm=a313x.fonts_index.i1.d9df05512.39f43a81kwpXll&cnid=a9fXc2HD9n7s">iconfont-阿里巴巴矢量图标库</a>为例进行演示。</p><p>下载后得到文件</p><p><img src="https://lzl-hexo-blog.oss-cn-hangzhou.aliyuncs.com/img/202412281116245.png"></p><p>我们选择 <code>AlimamaShuHeiTi-Bold.ttf</code> 文件放入到我们的项目中。在 <code>source/styles</code> 目录下新建文件夹 <code>fonts/</code>，把 <code>AlimamaShuHeiTi-Bold.ttf</code> 放入到 <code>fonts</code> 文件夹下。</p><p>之后，在 <code>styles/css/font.css</code> 目录下，新建 <code>font.css</code> 文件，文件内容如下：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@font-face</span> &#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">&#x27;AlimamaShuHeiTi&#x27;</span>;</span><br><span class="line">    <span class="attribute">font-display</span>: swap;</span><br><span class="line">    <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">&#x27;../fonts/AlimamaShuHeiTi-Bold.ttf&#x27;</span>) <span class="built_in">format</span>(<span class="string">&#x27;truetype&#x27;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>字体文件有 ttf, woff, woff2, otf 多种格式，ttf 对应的格式是 truetype，woff2 对应的格式是 woff2，woff 对应的格式是 wolf，otf 对应的格式是 opentype</p></blockquote><p><img src="https://lzl-hexo-blog.oss-cn-hangzhou.aliyuncs.com/img/202412281120023.png"></p><p>最后在 <code>config_butterfly.yml</code> 文件中，引入该 css 文件</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;stylesheet&quot;</span> <span class="string">href=&quot;/styles/css/font.css&quot;&gt;</span></span><br></pre></td></tr></table></figure><p><img src="https://lzl-hexo-blog.oss-cn-hangzhou.aliyuncs.com/img/202412281125022.png"></p><p>同时，在 <code>config_butterfly.yml</code> 文件中指定全局字体配置</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">font:</span></span><br><span class="line">  <span class="attr">global_font_size:</span> </span><br><span class="line">  <span class="attr">code_font_size:</span> </span><br><span class="line">  <span class="attr">font_family:</span> <span class="string">&#x27;AlimamaShuHeiTi&#x27;</span></span><br><span class="line">  <span class="attr">code_font_family:</span> <span class="string">Consolas,</span> <span class="string">&quot;Courier New&quot;</span><span class="string">,</span> <span class="string">monospace</span></span><br></pre></td></tr></table></figure><p><img src="https://lzl-hexo-blog.oss-cn-hangzhou.aliyuncs.com/img/202412281126852.png"></p><p>重新运行 <code>hexo s</code>，即可看到字体生效。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 合集 </category>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 博客 </tag>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Vue3 路由</title>
       <link href="/2024/12/26/Vue3%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/vue-router/"/>
       <url>/2024/12/26/Vue3%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/vue-router/</url>
@@ -205,7 +234,7 @@
       <link href="/2024/12/25/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-collection/"/>
       <url>/2024/12/25/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-collection/</url>
       
-        <content type="html"><![CDATA[<p>记录一下 Hexo 魔改过程，方便版本升级时快速修复</p><hr><h1 id="Hexo-添加看板娘"><a href="#Hexo-添加看板娘" class="headerlink" title="Hexo 添加看板娘"></a>Hexo 添加看板娘</h1><a class="btn-beautify outline larger" href="/2024/12/26/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexp-live2d/" title="点击跳转 至 Hexo 添加看板娘"><i class="far fa-hand-point-right"></i><span>点击跳转 至 Hexo 添加看板娘</span></a><hr><h1 id="Hexo-侧边栏添加文章合集"><a href="#Hexo-侧边栏添加文章合集" class="headerlink" title="Hexo 侧边栏添加文章合集"></a>Hexo 侧边栏添加文章合集</h1><a class="btn-beautify outline blue larger" href="/2024/12/26/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-aside-collection/" title="点击跳转 至 Hexo 侧边栏添加文章合集"><i class="far fa-hand-point-right"></i><span>点击跳转 至 Hexo 侧边栏添加文章合集</span></a><hr><h1 id="Hexo-小标题旋转风车设置"><a href="#Hexo-小标题旋转风车设置" class="headerlink" title="Hexo 小标题旋转风车设置"></a>Hexo 小标题旋转风车设置</h1><a class="btn-beautify outline pink larger" href="/2024/12/26/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-fan/" title="点击跳转 至 Hexo 小标题旋转风车设置"><i class="far fa-hand-point-right"></i><span>点击跳转 至 Hexo 小标题旋转风车设置</span></a><hr><h1 id="Hexo-添加雪花动态效果背景"><a href="#Hexo-添加雪花动态效果背景" class="headerlink" title="Hexo 添加雪花动态效果背景"></a>Hexo 添加雪花动态效果背景</h1><a class="btn-beautify outline red larger" href="/2024/12/25/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-snow/" title="点击跳转 至 Hexo 添加雪花动态效果背景"><i class="far fa-hand-point-right"></i><span>点击跳转 至 Hexo 添加雪花动态效果背景</span></a>]]></content>
+        <content type="html"><![CDATA[<p>记录一下 Hexo 魔改过程，方便版本升级时快速修复</p><hr><h1 id="Hexo-添加看板娘"><a href="#Hexo-添加看板娘" class="headerlink" title="Hexo 添加看板娘"></a>Hexo 添加看板娘</h1><a class="btn-beautify outline larger" href="/2024/12/26/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexp-live2d/" title="点击跳转 至 Hexo 添加看板娘"><i class="far fa-hand-point-right"></i><span>点击跳转 至 Hexo 添加看板娘</span></a><hr><h1 id="Hexo-侧边栏添加文章合集"><a href="#Hexo-侧边栏添加文章合集" class="headerlink" title="Hexo 侧边栏添加文章合集"></a>Hexo 侧边栏添加文章合集</h1><a class="btn-beautify outline blue larger" href="/2024/12/26/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-aside-collection/" title="点击跳转 至 Hexo 侧边栏添加文章合集"><i class="far fa-hand-point-right"></i><span>点击跳转 至 Hexo 侧边栏添加文章合集</span></a><hr><h1 id="Hexo-小标题旋转风车设置"><a href="#Hexo-小标题旋转风车设置" class="headerlink" title="Hexo 小标题旋转风车设置"></a>Hexo 小标题旋转风车设置</h1><a class="btn-beautify outline pink larger" href="/2024/12/26/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-fan/" title="点击跳转 至 Hexo 小标题旋转风车设置"><i class="far fa-hand-point-right"></i><span>点击跳转 至 Hexo 小标题旋转风车设置</span></a><hr><h1 id="Hexo-添加雪花动态效果背景"><a href="#Hexo-添加雪花动态效果背景" class="headerlink" title="Hexo 添加雪花动态效果背景"></a>Hexo 添加雪花动态效果背景</h1><a class="btn-beautify outline red larger" href="/2024/12/25/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-snow/" title="点击跳转 至 Hexo 添加雪花动态效果背景"><i class="far fa-hand-point-right"></i><span>点击跳转 至 Hexo 添加雪花动态效果背景</span></a><hr><h1 id="Hexo-修改字体"><a href="#Hexo-修改字体" class="headerlink" title="Hexo 修改字体"></a>Hexo 修改字体</h1><a class="btn-beautify outline orange larger" href="/2024/12/28/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-font/" title="点击跳转 至 Hexo 修改字体"><i class="far fa-hand-point-right"></i><span>点击跳转 至 Hexo 修改字体</span></a>]]></content>
       
       
       <categories>
