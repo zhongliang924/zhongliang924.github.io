@@ -4,24 +4,11 @@
   
     
     <entry>
-      <title>hexo-mouse</title>
-      <link href="/2024/12/28/hexo-mouse/"/>
-      <url>/2024/12/28/hexo-mouse/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hexo 修改鼠标样式</title>
       <link href="/2024/12/28/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-mouse/"/>
       <url>/2024/12/28/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-mouse/</url>
       
-        <content type="html"><![CDATA[<p>参考链接：<a href="https://jiangnanpsalter.github.io/2024/04/05/hexo+butterfly%E4%B8%BB%E9%A2%98%E5%88%A9%E7%94%A8css%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%E6%A0%B7%E5%BC%8F/">hexo+butterfly主题利用css部署网站鼠标指针样式</a></p>]]></content>
+        <content type="html"><![CDATA[<p>参考链接：<a href="https://jiangnanpsalter.github.io/2024/04/05/hexo+butterfly%E4%B8%BB%E9%A2%98%E5%88%A9%E7%94%A8css%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%E6%A0%B7%E5%BC%8F/">hexo+butterfly主题利用css部署网站鼠标指针样式</a></p><hr><p>瞎子自己中意的鼠标指针，推荐 <a href="https://zhutix.com/tag/cursors/">致美化网站</a> 进行下载。</p><p><img src="https://lzl-hexo-blog.oss-cn-hangzhou.aliyuncs.com/img/202412292306008.png"></p><p>将 cursor 格式 <code>.cur</code> 的鼠标指针图片放入到 <code>hexo_blog\themes\butterfly\source\cur</code> 路径下，这里我放了正常移动的 <code>normal.cur</code> 和点击链接的 <code>link.cur</code>，后续可以根据需求进行添加。</p><p>在本地 <code>styles\css</code> 目录下创建 <code>cursors.css</code> 并将以下代码复制粘贴到 <code>cursors.css</code> 进行保存</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">cursor</span>:<span class="built_in">url</span>(<span class="string">&#x27;/cur/normal.cur&#x27;</span>),</span><br><span class="line">          default;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-tag">a</span>,</span><br><span class="line">  link &#123;</span><br><span class="line">    <span class="attribute">cursor</span>:<span class="built_in">url</span>(<span class="string">&#x27;/cur/link.cur&#x27;</span>),</span><br><span class="line">          default;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure><p>在站点配置文件 <code>_config.butterfly.yml</code> 中找到 inject，在 <code>head</code> 处引入该文件：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;stylesheet&quot;</span> <span class="string">href=&quot;/styles/css/cursors.css&quot;&gt;</span></span><br></pre></td></tr></table></figure><p><img src="https://lzl-hexo-blog.oss-cn-hangzhou.aliyuncs.com/img/202412292310330.png"></p><p>然后重新部署即可看到鼠标生效。</p>]]></content>
       
       
       <categories>
