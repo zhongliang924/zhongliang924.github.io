@@ -1668,7 +1668,7 @@ figure.highlight pre .javascript .function {
 #article-container pre,
 #article-container code {
   font-size: var(--global-font-size);
-  font-family: Consolas, "Courier New", monospace !important;
+  font-family: AlimamaShuHeiTi !important;
   border-radius: 6px;
 }
 #article-container code {

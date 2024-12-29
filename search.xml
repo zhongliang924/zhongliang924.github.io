@@ -4,6 +4,48 @@
   
     
     <entry>
+      <title>hexo-mouse</title>
+      <link href="/2024/12/28/hexo-mouse/"/>
+      <url>/2024/12/28/hexo-mouse/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo 修改鼠标样式</title>
+      <link href="/2024/12/28/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-mouse/"/>
+      <url>/2024/12/28/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-mouse/</url>
+      
+        <content type="html"><![CDATA[<p>参考链接：<a href="https://jiangnanpsalter.github.io/2024/04/05/hexo+butterfly%E4%B8%BB%E9%A2%98%E5%88%A9%E7%94%A8css%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%E6%A0%B7%E5%BC%8F/">hexo+butterfly主题利用css部署网站鼠标指针样式</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 合集 </category>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 博客 </tag>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo 修改字体</title>
       <link href="/2024/12/28/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-font/"/>
       <url>/2024/12/28/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-font/</url>
@@ -234,7 +276,7 @@
       <link href="/2024/12/25/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-collection/"/>
       <url>/2024/12/25/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-collection/</url>
       
-        <content type="html"><![CDATA[<p>记录一下 Hexo 魔改过程，方便版本升级时快速修复</p><hr><h1 id="Hexo-添加看板娘"><a href="#Hexo-添加看板娘" class="headerlink" title="Hexo 添加看板娘"></a>Hexo 添加看板娘</h1><a class="btn-beautify outline larger" href="/2024/12/26/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexp-live2d/" title="点击跳转 至 Hexo 添加看板娘"><i class="far fa-hand-point-right"></i><span>点击跳转 至 Hexo 添加看板娘</span></a><hr><h1 id="Hexo-侧边栏添加文章合集"><a href="#Hexo-侧边栏添加文章合集" class="headerlink" title="Hexo 侧边栏添加文章合集"></a>Hexo 侧边栏添加文章合集</h1><a class="btn-beautify outline blue larger" href="/2024/12/26/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-aside-collection/" title="点击跳转 至 Hexo 侧边栏添加文章合集"><i class="far fa-hand-point-right"></i><span>点击跳转 至 Hexo 侧边栏添加文章合集</span></a><hr><h1 id="Hexo-小标题旋转风车设置"><a href="#Hexo-小标题旋转风车设置" class="headerlink" title="Hexo 小标题旋转风车设置"></a>Hexo 小标题旋转风车设置</h1><a class="btn-beautify outline pink larger" href="/2024/12/26/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-fan/" title="点击跳转 至 Hexo 小标题旋转风车设置"><i class="far fa-hand-point-right"></i><span>点击跳转 至 Hexo 小标题旋转风车设置</span></a><hr><h1 id="Hexo-添加雪花动态效果背景"><a href="#Hexo-添加雪花动态效果背景" class="headerlink" title="Hexo 添加雪花动态效果背景"></a>Hexo 添加雪花动态效果背景</h1><a class="btn-beautify outline red larger" href="/2024/12/25/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-snow/" title="点击跳转 至 Hexo 添加雪花动态效果背景"><i class="far fa-hand-point-right"></i><span>点击跳转 至 Hexo 添加雪花动态效果背景</span></a><hr><h1 id="Hexo-修改字体"><a href="#Hexo-修改字体" class="headerlink" title="Hexo 修改字体"></a>Hexo 修改字体</h1><a class="btn-beautify outline orange larger" href="/2024/12/28/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-font/" title="点击跳转 至 Hexo 修改字体"><i class="far fa-hand-point-right"></i><span>点击跳转 至 Hexo 修改字体</span></a>]]></content>
+        <content type="html"><![CDATA[<p>记录一下 Hexo 魔改过程，方便版本升级时快速修复</p><hr><h1 id="Hexo-添加看板娘"><a href="#Hexo-添加看板娘" class="headerlink" title="Hexo 添加看板娘"></a>Hexo 添加看板娘</h1><a class="btn-beautify outline larger" href="/2024/12/26/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexp-live2d/" title="点击跳转 至 Hexo 添加看板娘"><i class="far fa-hand-point-right"></i><span>点击跳转 至 Hexo 添加看板娘</span></a><hr><h1 id="Hexo-侧边栏添加文章合集"><a href="#Hexo-侧边栏添加文章合集" class="headerlink" title="Hexo 侧边栏添加文章合集"></a>Hexo 侧边栏添加文章合集</h1><a class="btn-beautify outline blue larger" href="/2024/12/26/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-aside-collection/" title="点击跳转 至 Hexo 侧边栏添加文章合集"><i class="far fa-hand-point-right"></i><span>点击跳转 至 Hexo 侧边栏添加文章合集</span></a><hr><h1 id="Hexo-小标题旋转风车设置"><a href="#Hexo-小标题旋转风车设置" class="headerlink" title="Hexo 小标题旋转风车设置"></a>Hexo 小标题旋转风车设置</h1><a class="btn-beautify outline pink larger" href="/2024/12/26/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-fan/" title="点击跳转 至 Hexo 小标题旋转风车设置"><i class="far fa-hand-point-right"></i><span>点击跳转 至 Hexo 小标题旋转风车设置</span></a><hr><h1 id="Hexo-添加雪花动态效果背景"><a href="#Hexo-添加雪花动态效果背景" class="headerlink" title="Hexo 添加雪花动态效果背景"></a>Hexo 添加雪花动态效果背景</h1><a class="btn-beautify outline red larger" href="/2024/12/25/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-snow/" title="点击跳转 至 Hexo 添加雪花动态效果背景"><i class="far fa-hand-point-right"></i><span>点击跳转 至 Hexo 添加雪花动态效果背景</span></a><hr><h1 id="Hexo-修改字体"><a href="#Hexo-修改字体" class="headerlink" title="Hexo 修改字体"></a>Hexo 修改字体</h1><a class="btn-beautify outline orange larger" href="/2024/12/28/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-font/" title="点击跳转 至 Hexo 修改字体"><i class="far fa-hand-point-right"></i><span>点击跳转 至 Hexo 修改字体</span></a><hr><h1 id="Hexo-修改鼠标样式"><a href="#Hexo-修改鼠标样式" class="headerlink" title="Hexo 修改鼠标样式"></a>Hexo 修改鼠标样式</h1><a class="btn-beautify outline green larger" href="/2024/12/28/hexo%E9%AD%94%E6%94%B9%E7%B3%BB%E5%88%97/hexo-mouse/" title="点击跳转 至 Hexo 修改鼠标样式"><i class="far fa-hand-point-right"></i><span>点击跳转 至 Hexo 修改鼠标样式</span></a>]]></content>
       
       
       <categories>
