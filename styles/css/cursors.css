@@ -1,0 +1,9 @@
+body {
+    cursor:url('/cur/normal.cur'),
+          default;
+  }
+  a,
+  link {
+    cursor:url('/cur/link.cur'),
+          default;
+  }

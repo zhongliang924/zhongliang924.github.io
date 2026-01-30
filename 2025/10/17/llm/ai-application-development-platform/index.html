@@ -1,0 +1,435 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>15个AI智能体开发应用平台 | 下雨の波比</title><meta name="author" content="下雨の波比"><meta name="copyright" content="下雨の波比"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="零代码开发平台码上飞码上飞（CodeFlying）由北京跨赴科技有限公司（简称“跨赴科技”）开发，是国内首款L4级自动化智能软件开发平台，依托大模型与软件开发技术，实现了与AI对话即可开发出完整应用的功能。 核心功能：  零代码开发 用户只需一句话简单描述需求，AI能自动生成小程序、APP或H5网页应用，无需编写代码 用户无需编程基础，只需描述需求，平台即可自动完成需求分析、代码生成、测试部署全流">
+<meta property="og:type" content="article">
+<meta property="og:title" content="15个AI智能体开发应用平台">
+<meta property="og:url" content="https://zhongliang924.github.io/2025/10/17/llm/ai-application-development-platform/index.html">
+<meta property="og:site_name" content="下雨の波比">
+<meta property="og:description" content="零代码开发平台码上飞码上飞（CodeFlying）由北京跨赴科技有限公司（简称“跨赴科技”）开发，是国内首款L4级自动化智能软件开发平台，依托大模型与软件开发技术，实现了与AI对话即可开发出完整应用的功能。 核心功能：  零代码开发 用户只需一句话简单描述需求，AI能自动生成小程序、APP或H5网页应用，无需编写代码 用户无需编程基础，只需描述需求，平台即可自动完成需求分析、代码生成、测试部署全流">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://zhongliang924.github.io/img/cover/cover-llm.png">
+<meta property="article:published_time" content="2025-10-17T01:12:01.000Z">
+<meta property="article:modified_time" content="2025-10-27T02:58:28.705Z">
+<meta property="article:author" content="下雨の波比">
+<meta property="article:tag" content="llm">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://zhongliang924.github.io/img/cover/cover-llm.png"><link rel="shortcut icon" href="/img/bear.png"><link rel="canonical" href="https://zhongliang924.github.io/2025/10/17/llm/ai-application-development-platform/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        if (name && globalFn[key][name]) return
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'medium_zoom',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-center"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '15个AI智能体开发应用平台',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-10-27 10:58:28'
+}</script><link rel="stylesheet" href="/styles/css/main.css"><script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script><link rel="stylesheet" href="/styles/css/collections.css"><link rel="stylesheet" href="/styles/css/font.css"><link rel="stylesheet" href="/styles/css/cursors.css"><style>#article-container.post-content h1:before, h2:before, h3:before, h4:before, h5:before, h6:before { -webkit-animation: avatar_turn_around 1s linear infinite; -moz-animation: avatar_turn_around 1s linear infinite; -o-animation: avatar_turn_around 1s linear infinite; -ms-animation: avatar_turn_around 1s linear infinite; animation: avatar_turn_around 1s linear infinite; }</style><meta name="generator" content="Hexo 7.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load', preloader.endLoading)
+
+  if (false) {
+    btf.addGlobalFn('pjaxSend', preloader.initLoading, 'preloader_init')
+    btf.addGlobalFn('pjaxComplete', preloader.endLoading, 'preloader_end')
+  }
+})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.jpeg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">23</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 目录</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-heartbeat"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/cover/cover-llm.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">下雨の波比</span></a><a class="nav-page-title" href="/"><span class="site-name">15个AI智能体开发应用平台</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 目录</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-heartbeat"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">15个AI智能体开发应用平台</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-10-17T01:12:01.000Z" title="发表于 2025-10-17 09:12:01">2025-10-17</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-10-27T02:58:28.705Z" title="更新于 2025-10-27 10:58:28">2025-10-27</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%B0%83%E7%A0%94/">调研</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>15分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="零代码开发平台"><a href="#零代码开发平台" class="headerlink" title="零代码开发平台"></a>零代码开发平台</h2><h3 id="码上飞"><a href="#码上飞" class="headerlink" title="码上飞"></a>码上飞</h3><p><a target="_blank" rel="noopener" href="https://www.codeflying.net/">码上飞</a>（CodeFlying）由北京跨赴科技有限公司（简称“跨赴科技”）开发，是国内首款L4级自动化智能软件开发平台，依托大模型与软件开发技术，实现了与AI对话即可开发出完整应用的功能。<img src="https://lzl-hexo-blog.oss-cn-hangzhou.aliyuncs.com/img/image-20250903104652362.png" alt="image-20250903104652362"></p>
+<p><strong>核心功能：</strong></p>
+<ol>
+<li>零代码开发<ul>
+<li>用户只需一句话简单描述需求，AI能自动生成小程序、APP或H5网页应用，无需编写代码</li>
+<li>用户无需编程基础，只需描述需求，平台即可自动完成需求分析、代码生成、测试部署全流程</li>
+</ul>
+</li>
+<li>多平台应用生成<ul>
+<li>支持生成微信小程序、安卓APP、鸿蒙APP、H5网页等多种应用形式，实现”一次开发，多端部署”</li>
+<li>支持一键发布到多个平台，如小程序、安卓、鸿蒙OS等</li>
+</ul>
+</li>
+<li>全流程自动化<ul>
+<li>从需求输入到部署交付全程无需人工干预，AI自动生成前后端代码、数据库结构和用户界面</li>
+<li>5分钟内生成可运行的Web应用、小程序、管理系统甚至小游戏</li>
+</ul>
+</li>
+<li>独立后台管理<ul>
+<li>每个应用都配备独立的后台管理系统，用户通过后台进行应用的运营管理</li>
+</ul>
+</li>
+</ol>
+<p>码上飞本质上是一个”文生应用”的AI平台，让没有编程经验的用户也能通过自然语言交互快速创建各类应用程序，实现了从想法到应用的快速转化。</p>
+<h3 id="Trickle-AI"><a href="#Trickle-AI" class="headerlink" title="Trickle AI"></a>Trickle AI</h3><p><a target="_blank" rel="noopener" href="https://trickle.so/">Trickle AI</a> 是一款面向非开发者的“零代码”AI 建站与托管平台，由 Mike Heremans 创立。它通过自然语言输入即可自动生成完整的网页、表单或轻量级应用，并一键部署上线，适合个人、创业者、设计师及中小企业快速验证创意。</p>
+<p><img src="https://lzl-hexo-blog.oss-cn-hangzhou.aliyuncs.com/img/image-20250923101329299.png" alt="image-20250923101329299"></p>
+<p><strong>核心功能</strong>：</p>
+<ol>
+<li>自然语言生成：用中文或英文描述需求，AI 同时完成前端、后端与数据库代码</li>
+<li>Magic Canvas：全球首款“生成式画布”，支持可视化拖拽、实时协同、版本回溯，可秒级生成生产级网站或小游戏</li>
+<li>内置数据库：集成 Supabase，表单、用户、内容等数据自动入库，无需额外配置</li>
+<li>一键托管：自带 SSL、自定义域名、SEO 与访问分析，点一次即可上线</li>
+<li>多模板与 3D 支持：200+ 响应式模板可一键克隆；集成 Three.js，可直接加载 glTF 3D 模型生成沉浸式站点</li>
+<li>AI增强组件：内置图像优化、数据分析、可视化图表及营销文案生成，开箱即用</li>
+</ol>
+<h3 id="秒哒"><a href="#秒哒" class="headerlink" title="秒哒"></a>秒哒</h3><p><a target="_blank" rel="noopener" href="https://www.miaoda.cn/">秒哒</a>是百度于2024年11月12日在百度世界大会上推出的<strong>零代码AI应用开发平台</strong>，基于文心大模型和多智能体协作技术，旨在让<strong>非程序员用户也能通过自然语言快速构建复杂应用</strong>。2025年3月，秒哒正式全量上线，成为国内首个“对话式”无代码开发平台</p>
+<p><img src="https://lzl-hexo-blog.oss-cn-hangzhou.aliyuncs.com/img/image-20250923101919952.png" alt="image-20250923101919952"></p>
+<p><strong>核心功能：</strong></p>
+<ol>
+<li>无代码编程：用户只需用自然语言描述需求，秒哒即可自动生成完整的前端、后端及数据库代码，无需编写任何代码</li>
+<li>多智能体协作：内置十余个垂直领域智能体（如需求分析、架构设计、开发、测试等），模拟完整软件开发流程，协同完成应用构建</li>
+<li>多工具调用：支持调用百度智能云及第三方API，如地图、短信、支付、图像识别等，快速实现复杂业务功能</li>
+<li>多模态输入与可视化编辑：支持上传草图或截图生成应用，同时提供图形界面（GUI）与语言界面（LUI）双模式，便于后续调整和优化</li>
+<li>应用广场与模板复用：提供丰富的应用模板和创意案例，用户可一键复制并二次开发，降低创作门槛</li>
+</ol>
+<h3 id="Zion"><a href="#Zion" class="headerlink" title="Zion"></a>Zion</h3><p><a target="_blank" rel="noopener" href="https://www.functorz.com/">Zion</a> 是函子科技推出的<strong>全栈无代码 AI 应用开发平台</strong>，面向非程序员与开发者 alike，通过“拖拽式+自然语言”双模式，在一份画布上同时完成前端、后端、数据库与 AI 能力的组装，<strong>10 分钟即可把想法变成可商用的小程序&#x2F;Web&#x2F;移动应用</strong>。</p>
+<p><img src="https://lzl-hexo-blog.oss-cn-hangzhou.aliyuncs.com/img/image-20250923103945074.png" alt="image-20250923103945074"></p>
+<p><strong>核心功能：</strong></p>
+<ol>
+<li>零代码可视化开发：自研画布支持 150+ 组件拖拽、150+ 交互动画、响应式布局，像素级还原设计稿，全程无需写代码</li>
+<li>AI应用“积木化”：预置 GPT-4、Claude、Gemini 等主流大模型节点，内置知识库、向量搜索、Embedding 与 HITL（人机协作）机制，可一键组装智能客服、文案生成、图片&#x2F;视频合成等场景 </li>
+<li>数据模型 &amp; 管理后台自动生成：可视化建表 → 自动生成 REST API → 自动生成带权限的后台，可承载亿级数据；支持 60+ 图表的仪表盘即将上线</li>
+<li>多端一键发布：同一份工程可同时导出微信小程序、H5、Web、iOS&#x2F;Android；也支持私有化部署，满足政企合规需求</li>
+<li>API 与插件市场：开放 500+ 外部 API（地图、天气、短信、OCR 等）与插件市场，支持自定义代码节点，无限扩展能力边界</li>
+<li>协作与版本管理：类似 Notion 的页面级协同、分支&#x2F;合并、历史回滚，让产品、设计、运营同时在线编辑，开发流程透明可追踪</li>
+</ol>
+<p>Zion &#x3D;「无代码画布 + AI 大模型 + 全栈工程化」，让个人也能以 SaaS 速度交付企业级智能应用。</p>
+<h3 id="NoCode"><a href="#NoCode" class="headerlink" title="NoCode"></a>NoCode</h3><p>Nocode 是美团 2025 年 5 月正式推出的<strong>零代码 AI 应用开发平台</strong>，定位为“Vibe Coding（氛围编程）”工具。它基于美团自研的千亿参数 LongCat 大模型，面向<strong>非专业开发者</strong>（产品经理、运营、学生等），通过自然语言对话即可一键生成可部署的 Web&#x2F;小程序应用，目标“让开发像点外卖一样简单”</p>
+<p><img src="https://lzl-hexo-blog.oss-cn-hangzhou.aliyuncs.com/img/image-20250923104832671.png" alt="image-20250923104832671"></p>
+<p><strong>核心功能：</strong></p>
+<ol>
+<li>自然语言编程：用日常中文&#x2F;英文描述需求，AI 自动生成完整的前端、后端与数据库代码；支持多轮对话迭代，1 秒可产出约 200 行代码</li>
+<li>双模式编辑器<ul>
+<li>Chat Edit：纯对话方式生成页面与逻辑</li>
+<li>Visual Edit：点选元素即可改颜色、文字、布局，支持 Tailwind CSS 深度定制</li>
+</ul>
+</li>
+<li>实时预览 &amp; 局部定位修改：每次对话或拖拽后即时渲染；可针对任意元素说“把按钮改成蓝色”即刻生效，并支持版本对比与回滚</li>
+<li>内置数据库与 API 连接：免费提供 512 MB 存储，自动建表、读写数据；可调用外部 API，快速实现问卷、排行榜、订单统计等场景</li>
+<li>一键部署 &amp; 分享：应用完成后自动上传到云端仓库，生成独立 HTTPS 链接与二维码，支持自定义域名，秒级上线</li>
+<li>多应用模板：官方提供官网、小游戏、活动页、点餐系统等模板，可一键克隆再二次开发，覆盖个人提效到商用闭环</li>
+</ol>
+<h2 id="AI-应用平台"><a href="#AI-应用平台" class="headerlink" title="AI 应用平台"></a>AI 应用平台</h2><h3 id="Dify"><a href="#Dify" class="headerlink" title="Dify"></a>Dify</h3><p><a target="_blank" rel="noopener" href="https://dify.ai/zh">Dify</a>是一款开源的大语言模型（LLM）应用开发平台，为AI应用提供从构思、开发到部署、监控的完整基础设施，帮助团队打造能投产并创造真正价值的Agentic AI解决方案。<img src="https://lzl-hexo-blog.oss-cn-hangzhou.aliyuncs.com/img/image-20250903113300714.png" alt="image-20250903113300714"></p>
+<p><strong>核心功能：</strong></p>
+<ol>
+<li>零代码开发<ul>
+<li>零代码拖拽式界面设计，轻松构建复杂AI流程，大幅降低开发门槛</li>
+<li>让开发者、企业甚至非技术人员都能快速构建生产级生成式AI应用</li>
+</ul>
+</li>
+<li>工作流编排<ul>
+<li>工作流通过将复杂的任务分解成较小的步骤（节点）降低系统复杂度，减少了对提示词技术和模型推理能力的依赖，提高了LLM应用面向复杂任务的性能，提升了系统的可解释性、稳定性和容错性 </li>
+<li>提供从Agent构建到AI workflow编排等能力</li>
+</ul>
+</li>
+<li>RAG检索增强生成<ul>
+<li>提供RAG检索、模型管理等能力</li>
+<li>提供全面的RAG Pipeline用于文档处理和检索</li>
+<li>可以实现将企业或个人的知识库集成到大模型应用中，从而创建出深度定制化的AI问答解决方案</li>
+</ul>
+</li>
+<li>知识库管理<ul>
+<li>具备功能丰富的提示词IDE和全面的RAG Pipeline用于文档处理和检索</li>
+<li>支持多种数据导入方式，包括文本数据、从Notion导入、从网页导入等</li>
+<li>提供不同的分段模式和索引方法设置</li>
+</ul>
+</li>
+<li>Agent智能体<ul>
+<li>允许用户定义Agent智能体</li>
+<li>提供从Agent构建能力，轻松构建和运营AI应用</li>
+</ul>
+</li>
+</ol>
+<h3 id="Coze"><a href="#Coze" class="headerlink" title="Coze"></a>Coze</h3><p><a target="_blank" rel="noopener" href="https://space.coze.cn/">Coze</a>是新一代AI大模型智能体开发平台，整合了插件、长短期记忆、工作流、卡片等丰富能力，扣子能帮你低门槛、快速搭建个性化或具备商业价值的智能体，并发布到豆包、飞书等各个平台<img src="https://lzl-hexo-blog.oss-cn-hangzhou.aliyuncs.com/img/image-20250903110455896.png" alt="image-20250903110455896"></p>
+<p><strong>核心功能：</strong></p>
+<ol>
+<li>智能体（Bot）创建<ul>
+<li>无论你是否有编码基础，都可以快速搭建基于大语言模型的各类AI Bot，还可以将Bot发布到其他渠道</li>
+<li>无需编程基础即可通过可视化界面创建智能助手和AI应用</li>
+</ul>
+</li>
+<li>工作流（Workflow）<ul>
+<li>工作流支持通过可视化的方式，对插件、大语言模型、代码块等功能进行组合，从而实现复杂、稳定的业务流程编排</li>
+<li>工作流可以将大语言模型、Python代码或者Javascript代码、知识库、选择器、变量、数据库、插件等诸多模块以工作流程的方式，很好的缝合在一起，从而能完成非常复杂的任务</li>
+</ul>
+</li>
+<li>知识库管理<ul>
+<li>Coze提供易于使用的知识库功能，使AI能够与用户自己的数据（如PDF、网页文本）进行交互。可以存储和管理知识中的数据</li>
+<li>用户不仅可以导入数据到知识库，还可以自定义插件来扩展机器人的能力，提高了系统的可定制性</li>
+</ul>
+</li>
+<li>插件系统<ul>
+<li>Coze平台集成了超过种多样化的插件工具，覆盖了新闻等各个领域</li>
+<li>Coze还提供了扩展功能的插件，使用户能够进一步定制和增强Bot的功能</li>
+</ul>
+</li>
+<li>长短期记忆能力<ul>
+<li>长期记忆能力：提供便捷的数据库存储能力，可以让AI机器人持久记住对话中的重要信息</li>
+<li>Coze提供了方便AI交互的数据库记忆能力。通过这类功能，你可以让Bot持久化的记住用户对话的重要参数或内容</li>
+</ul>
+</li>
+</ol>
+<h3 id="星辰Agent"><a href="#星辰Agent" class="headerlink" title="星辰Agent"></a>星辰Agent</h3><p><a target="_blank" rel="noopener" href="https://agent.xfyun.cn/">星辰Agent</a>是科大讯飞推出的新一代AI智能体开发平台，支持通过提示词Prompt、工作流Workflow灵活创建专业智能体，助力开发者快速搭建生产级智能体<img src="https://lzl-hexo-blog.oss-cn-hangzhou.aliyuncs.com/img/image-20250903111602464.png" alt="image-20250903111602464"></p>
+<p><strong>核心功能：</strong></p>
+<ol>
+<li>开发模式<ul>
+<li>支持零代码和低代码开发模式，通过拖拽节点、Prompt及工作流编排即可创建Agent，使开发者和普通用户都能轻松上手</li>
+<li>开发者可以快速创建智能体应用，灵活配置权限，实现私有使用或共享发布</li>
+</ul>
+</li>
+<li>MCP协议支持<ul>
+<li>全面支持MCP协议，提供丰富的MCP Server资源，覆盖AI能力、生活服务、内容生成等多个领域 </li>
+<li>首批支持20+行业精品MCP Server，支持开发者、企业一键托管自研MCP Server</li>
+<li>开发者可将轻量级工作流一键发布为MCP Server，进一步扩展工具能力边界</li>
+</ul>
+</li>
+<li>丰富的插件生态<ul>
+<li>提供16000+即用插件和行业模板</li>
+<li>插件广场就像走进AI版的”应用商店”——天气预报、股票分析、论文摘要等工具一键调用，连高德地图和学术爬虫这类专业工具也直接集成</li>
+</ul>
+</li>
+<li>模型兼容性<ul>
+<li>核心优势在于全开放的模型与工具架构，兼容多源优质模型</li>
+<li>支持多模型Prompt对比调优，帮助开发者精准匹配场景需求</li>
+</ul>
+</li>
+</ol>
+<h3 id="BetterYeah-AI"><a href="#BetterYeah-AI" class="headerlink" title="BetterYeah AI"></a>BetterYeah AI</h3><p><a target="_blank" rel="noopener" href="https://www.betteryeah.com/">斑头雁</a>（杭州）智能科技有限责任公司，是国内AI Agent领域的先行者，分别于2023年6月、9月推出BetterYeah AI Flow、AI Agent开发平台，聚焦为企业提供智能体相关全链路AI Infra基础设施</p>
+<p><img src="https://lzl-hexo-blog.oss-cn-hangzhou.aliyuncs.com/img/image-20250903141442277.png" alt="image-20250903141442277"></p>
+<p><strong>核心功能：</strong></p>
+<ol>
+<li>零代码智能体开发：用自然语言描述角色、上传知识库，平台自动生成提示词、工作流与 Agent，业务人员也能搭；专业开发者可切到代码模式做深度调优</li>
+<li>一站式模型+知识+数据：内置 ChatGLM、通义千问、百度千帆等数十种主流大模型，可一键切换；自带自动向量化、混合检索、多模态解析，可把 PDF、视频、图片等非结构化数据秒级入库，并与企业 CRM&#x2F;ERP&#x2F;MES 等数据库打通，让 Agent 拥有“持久记忆”</li>
+<li>插件与 Flow 双引擎：官方提供 10 多款“开箱即用”插件：Bing&#x2F;Google 搜索、AI 识图&#x2F;生图、抖音&#x2F;小红书数据抓取等；同时支持可视化 Flow 编排，把插件、判断节点、API 调用自由组合，实现复杂业务流程</li>
+<li>多渠道一键发布：生成好的 Agent 可通过 API、SDK、Webhook 直接嵌入企业现有系统，也可一键对接微信客服、钉钉、飞书、企业微信等 IM 平台，真正“随处可用”</li>
+<li>企业级安全部署：五层安全防护（权限、网络隔离、数据加密、运行监控、内容合规），支持 SaaS、私有云、一体机多种部署，满足等保与私有化合规需求</li>
+</ol>
+<h3 id="百宝箱-TBox"><a href="#百宝箱-TBox" class="headerlink" title="百宝箱 TBox"></a>百宝箱 TBox</h3><p><a target="_blank" rel="noopener" href="https://www.tbox.cn/about">百宝箱 TBox</a> 是蚂蚁集团 2025 年推出的「零代码 AI 原生应用开发平台」。用户只需用自然语言描述需求，即可在几分钟内创建、调试并一键发布可商用的 AI 智能体，而无需任何编程基础。平台与支付宝生态深度打通，智能体可直接落地为支付宝小程序、生活号、Web 端等多端应用，广泛用于智能客服、营销互动、内容生成、数据分析等场景</p>
+<p><img src="https://lzl-hexo-blog.oss-cn-hangzhou.aliyuncs.com/img/image-20250922135113364.png" alt="image-20250922135113364"></p>
+<p><strong>核心功能：</strong></p>
+<ol>
+<li>全链路零代码开发<ul>
+<li>纯中文对话式交互：说出需求即可自动生成应用逻辑流。</li>
+<li>可视化流程编辑器：拖拽式调整大模型节点、API 调用、数据过滤器，支持循环、分支、并行等高级编排</li>
+</ul>
+</li>
+<li>丰富应用模板与类型<ul>
+<li>对话型、文本型、文生图、图生图、工作流、知识库问答、语音播客、交互式网页等 20 余种模板一键克隆，1 分钟生成专属智能体</li>
+</ul>
+</li>
+<li>支付宝 30+ 能力原生集成<ul>
+<li>预置支付、芝麻信用、电子合同、高德地图、无影云等 MCP 服务；扫码即上线支付宝小程序，最快 3 分钟完成商业化闭环</li>
+</ul>
+</li>
+<li>企业级运维与协作<ul>
+<li>私有化部署、AES-256 数据加密、流量监控大屏、多角色权限分级、版本控制，支持团队协同开发与灰度发布</li>
+</ul>
+</li>
+<li>知识库与模型微调<ul>
+<li>上传 PDF&#x2F;Excel&#x2F;图片等文件自动向量化，打造私有知识库；内置 LoRA 微调，可训练专属图像或文本模型</li>
+</ul>
+</li>
+<li>免费算力与一键分发<ul>
+<li>目前平台内所有模型调用与算力完全免费；应用可一键分发至支付宝、Web、H5、小程序、浏览器插件等多端</li>
+</ul>
+</li>
+</ol>
+<h3 id="天壤小白应用开发平台"><a href="#天壤小白应用开发平台" class="headerlink" title="天壤小白应用开发平台"></a>天壤小白应用开发平台</h3><p><a target="_blank" rel="noopener" href="https://www.tianrang.com/?ref=ai-bot.cn">天壤小白应用开发平台（LLM APP Stack）</a>由上海天壤智能科技推出，是一个“人人可用”的 AI 全栈开发环境。平台内置 1860 亿参数的自研通用大语言模型，配合语义搜索引擎与 Embedding 模型，为开发者及零编程基础用户提供从提示词设计到应用上线的一站式服务，帮助企业在知识管理、客服、营销、合规等场景快速落地可信赖的商业级大模型应用</p>
+<p><img src="https://lzl-hexo-blog.oss-cn-hangzhou.aliyuncs.com/img/image-20250922135859749.png" alt="image-20250922135859749"></p>
+<p><strong>核心功能：</strong></p>
+<ol>
+<li>零代码可视化开发<ul>
+<li>拖拽式组件 + 自然语言编程，30 分钟即可搭建文本生成、对话、搜索、工作流四大类型应用</li>
+<li>支持多轮对话上下文记忆、分支流程、循环调用等复杂逻辑编排，无需写一行代码</li>
+</ul>
+</li>
+<li>多模型与弹性算力<ul>
+<li>内置天壤小白 1860 亿参数主模型及轻量版、微调版，可按速度&#x2F;成本一键切换；同时兼容外部 API，实现混合模型调度</li>
+<li>提供按量与包月双模式，自动弹性扩缩容，避免算力浪费</li>
+</ul>
+</li>
+<li>企业级知识增强<ul>
+<li>自研语义搜索引擎 + 向量数据库，上传 PDF&#x2F;Excel&#x2F;图片即可构建私有知识库，显著抑制大模型幻觉，问答准确率提升 35% 以上</li>
+<li>支持 OCR、表格结构识别、多语言文档解析，自动切分段落并生成嵌入向量</li>
+</ul>
+</li>
+<li>提示词功能与 AI Agent<ul>
+<li>专业 Prompt IDE：零样本、少样本、链式思考、角色扮演等模板一键复用；实时调试窗口可见模型输出差异</li>
+<li>可视化 Agent 编排：可把“搜索-生成-调用 API-数据回填”封装为可复用智能体，实现复杂任务自动闭环</li>
+</ul>
+</li>
+<li>安全合规与运维<ul>
+<li>敏感词库、上下文限制、输出格式过滤三层内容安全机制，满足金融、政务合规要求</li>
+<li>后台提供用量监控、用户满意度、A&#x2F;B 测试、灰度发布等完整运营指标，支持私有化部署与 SSO 权限对接</li>
+</ul>
+</li>
+<li>一键发布与多端集成<ul>
+<li>应用可一键生成独立 Web App、嵌入 iframe 或直接暴露 RESTful API，2 分钟即可接入企业微信、飞书、支付宝小程序等终端</li>
+<li>官方应用市场提供客服、HR、电商、法律等 30+ 场景模板，可克隆后二次修改，实现“开箱即用”</li>
+</ul>
+</li>
+</ol>
+<h3 id="Wordware"><a href="#Wordware" class="headerlink" title="Wordware"></a>Wordware</h3><p>Wordware 由 Filip Kozera 与 Robert Chandler于 2021 年在旧金山联合创立，是一个面向技术与非技术用户的<strong>无代码 AI 应用开发平台</strong>，通过“自然语言即代码”的理念，让用户像写文档一样快速构建、迭代并一键部署 AI Agent 与多模态应用。其目标是让领域专家而非程序员主导 AI 开发，把传统数月的工作压缩到数小时甚至数分钟</p>
+<p><img src="https://lzl-hexo-blog.oss-cn-hangzhou.aliyuncs.com/img/image-20250923102905887.png" alt="image-20250923102905887"></p>
+<p><strong>核心功能：</strong></p>
+<ol>
+<li>自然语言编程：用日常英语（或其他语言）描述需求，平台自动转化为带循环、分支、变量、类型安全等高级特性的可执行工作流，无需手写代码 </li>
+<li>Notion 式协作界面：提供类似 Notion 的块级文档编辑器，支持多人实时协作、版本回溯、子文档嵌套与组件复用，可把 Prompt 当“积木”随意拖拽组合</li>
+<li>多模态工作流：默认支持文本、图像、音频、视频四种模态输入输出，可在同一流程内完成“文生图→图生文→语音合成→视频渲染”等复杂链路</li>
+<li>多模型即切即用：已集成 GPT-4、Claude、Gemini、Mistral、Llama 等主流大模型，可在节点级别一键切换，按需平衡成本、延迟与效果</li>
+<li>预制工具 &amp; API 集市：内置网页抓取、搜索、语音合成、图像生成、RAG 知识库、数据库读写等 50+ 组件；同时开放自定义代码节点，可调用任意第三方 API</li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://zhongliang924.github.io">下雨の波比</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://zhongliang924.github.io/2025/10/17/llm/ai-application-development-platform/">https://zhongliang924.github.io/2025/10/17/llm/ai-application-development-platform/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://zhongliang924.github.io" target="_blank">下雨の波比</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/llm/">llm</a></div><div class="post-share"><div class="social-share" data-image="/img/cover/cover-llm.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2025/11/20/dev/cors-1/" title="跨域问题-1"><img class="cover" src="/img/cover/cover-coffee.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">跨域问题-1</div></div><div class="info-2"><div class="info-item-1">如今的 Web 项目大多采用前后端分离架构,这使得跨域问题变得常见。 CORS (Cross-Origin Resource Sharing) 跨域资源共享，是浏览器的安全机制。当前端（如 http://localhost:3000）请求后端（如 http://localhost:5000）时，因为域名&#x2F;端口不同，浏览器会阻止请求，除非后端明确允许。 跨域问题有哪些现象如果出现跨域问题：  前端：浏览器正在访问一个页面 https://www.helloworld.net/special ， 此页面中发送了一个后端的一个 http 接口 后端：访问的后端接口为： https://tiger-api.helloworld.net/v1/special/getSpecialList  提示：has been blocked by CORS policy: Response to preflight request does not pass access control check 翻译过来就是：已被 CORS...</div></div></div></a><a class="pagination-related" href="/2025/06/14/llm/llm-deploy/" title="大模型部署文档"><img class="cover" src="/img/cover/cover-llm.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">大模型部署文档</div></div><div class="info-2"><div class="info-item-1">本文档提供了vLLM 0.7.3的Miniconda安装教程，适合需要快速部署大模型的开发者参考。 vLLM 0.7.3 Miniconda 安装教程第一步：安装 Miniconda如果尚未安装 Miniconda，请先安装： 12345678# 下载 Miniconda 安装脚本wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh# 安装 Minicondabash Miniconda3-latest-Linux-x86_64.sh# 重新加载 shell 配置source ~/.bashrc  如果需要安装特定版本的 Miniconda（比如为了兼容性或稳定性考虑）： 查看可用版本：访问 Miniconda 历史版本页面 查看所有可用版本。 例如，Python 3.11 版本 (2023年发布): 123# Miniconda3 py311_23.11.0-2wget...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2025/06/14/llm/llm-deploy/" title="大模型部署文档"><img class="cover" src="/img/cover/cover-llm.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-06-14</div><div class="info-item-2">大模型部署文档</div></div><div class="info-2"><div class="info-item-1">本文档提供了vLLM 0.7.3的Miniconda安装教程，适合需要快速部署大模型的开发者参考。 vLLM 0.7.3 Miniconda 安装教程第一步：安装 Miniconda如果尚未安装 Miniconda，请先安装： 12345678# 下载 Miniconda 安装脚本wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh# 安装 Minicondabash Miniconda3-latest-Linux-x86_64.sh# 重新加载 shell 配置source ~/.bashrc  如果需要安装特定版本的 Miniconda（比如为了兼容性或稳定性考虑）： 查看可用版本：访问 Miniconda 历史版本页面 查看所有可用版本。 例如，Python 3.11 版本 (2023年发布): 123# Miniconda3 py311_23.11.0-2wget...</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.jpeg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">下雨の波比</div><div class="author-info-description">每一刻都是精彩的瞬间</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">23</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/zhongliang924"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/zhongliang924" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:1551054080@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到我的技术博客！这里主要记录我在日常工作中遇到的、具有挑战性的技术问题、解决方案和心得体会。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%B6%E4%BB%A3%E7%A0%81%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0"><span class="toc-number">1.</span> <span class="toc-text">零代码开发平台</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A0%81%E4%B8%8A%E9%A3%9E"><span class="toc-number">1.1.</span> <span class="toc-text">码上飞</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Trickle-AI"><span class="toc-number">1.2.</span> <span class="toc-text">Trickle AI</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%92%E5%93%92"><span class="toc-number">1.3.</span> <span class="toc-text">秒哒</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Zion"><span class="toc-number">1.4.</span> <span class="toc-text">Zion</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#NoCode"><span class="toc-number">1.5.</span> <span class="toc-text">NoCode</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AI-%E5%BA%94%E7%94%A8%E5%B9%B3%E5%8F%B0"><span class="toc-number">2.</span> <span class="toc-text">AI 应用平台</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Dify"><span class="toc-number">2.1.</span> <span class="toc-text">Dify</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Coze"><span class="toc-number">2.2.</span> <span class="toc-text">Coze</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%98%9F%E8%BE%B0Agent"><span class="toc-number">2.3.</span> <span class="toc-text">星辰Agent</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BetterYeah-AI"><span class="toc-number">2.4.</span> <span class="toc-text">BetterYeah AI</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%99%BE%E5%AE%9D%E7%AE%B1-TBox"><span class="toc-number">2.5.</span> <span class="toc-text">百宝箱 TBox</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%A9%E5%A3%A4%E5%B0%8F%E7%99%BD%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0"><span class="toc-number">2.6.</span> <span class="toc-text">天壤小白应用开发平台</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Wordware"><span class="toc-number">2.7.</span> <span class="toc-text">Wordware</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/01/30/langchain/lanchain-govai/" title="基于 LangGraph + Dify 的智能产品查询助手开发实践"><img src="/img/cover/cover-langchain.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于 LangGraph + Dify 的智能产品查询助手开发实践"/></a><div class="content"><a class="title" href="/2026/01/30/langchain/lanchain-govai/" title="基于 LangGraph + Dify 的智能产品查询助手开发实践">基于 LangGraph + Dify 的智能产品查询助手开发实践</a><time datetime="2026-01-30T08:11:04.000Z" title="发表于 2026-01-30 16:11:04">2026-01-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/12/18/dev/git-tutorials/" title="Git 教程"><img src="/img/cover/cover-coffee.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Git 教程"/></a><div class="content"><a class="title" href="/2025/12/18/dev/git-tutorials/" title="Git 教程">Git 教程</a><time datetime="2025-12-18T09:38:35.000Z" title="发表于 2025-12-18 17:38:35">2025-12-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/11/20/dev/cors-2/" title="跨域问题-2"><img src="/img/cover/cover-coffee.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="跨域问题-2"/></a><div class="content"><a class="title" href="/2025/11/20/dev/cors-2/" title="跨域问题-2">跨域问题-2</a><time datetime="2025-11-20T07:05:35.000Z" title="发表于 2025-11-20 15:05:35">2025-11-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/11/20/dev/cors-1/" title="跨域问题-1"><img src="/img/cover/cover-coffee.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="跨域问题-1"/></a><div class="content"><a class="title" href="/2025/11/20/dev/cors-1/" title="跨域问题-1">跨域问题-1</a><time datetime="2025-11-20T07:05:33.000Z" title="发表于 2025-11-20 15:05:33">2025-11-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/10/17/llm/ai-application-development-platform/" title="15个AI智能体开发应用平台"><img src="/img/cover/cover-llm.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="15个AI智能体开发应用平台"/></a><div class="content"><a class="title" href="/2025/10/17/llm/ai-application-development-platform/" title="15个AI智能体开发应用平台">15个AI智能体开发应用平台</a><time datetime="2025-10-17T01:12:01.000Z" title="发表于 2025-10-17 09:12:01">2025-10-17</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2026 By 下雨の波比</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>(() => {
+  const panguFn = () => {
+    if (typeof pangu === 'object') pangu.autoSpacingPage()
+    else {
+      btf.getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+        .then(() => {
+          pangu.autoSpacingPage()
+        })
+    }
+  }
+
+  const panguInit = () => {
+    if (false){
+      GLOBAL_CONFIG_SITE.isPost && panguFn()
+    } else {
+      panguFn()
+    }
+  }
+
+  btf.addGlobalFn('pjaxComplete', panguInit, 'pangu')
+  document.addEventListener('DOMContentLoaded', panguInit)
+})()</script><div class="js-pjax"></div><script src="/styles/js/fish.js"></script><script src="/styles/js/snowflake.js"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"superSample":2,"width":180,"height":360,"position":"left","hOffset":0,"vOffset":-20},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
